@@ -1,0 +1,40 @@
+.page-footer {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background-color: @bg-color-dirty-white;
+}
+
+.page-footer__hashtag {
+  margin-top: 40px;
+  .font-title-big();
+  color: @black;
+  line-height: 26px;
+}
+
+.page-footer__copyright {
+  .font-main();
+  color: @black;
+  line-height: 26px;
+}
+
+.page-footer__copyright-link {
+  svg {
+    vertical-align: middle;
+    fill: @black;
+  }
+  &:hover {
+    svg {
+      fill: @lightblue;
+    }
+  }
+  &:active {
+    svg {
+      fill: @black;
+      opacity: 0.3;
+    }
+  }
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+}
