@@ -3,7 +3,30 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 85px;
   width: 105px;
   margin: 0 auto;
   z-index: 3;
  }
+
+.page-header {
+  display: flex;
+  background-color: @white;
+}
+
+@media (min-width: @mobile-width) {
+  flex-direction: column;
+  background-color: transparent;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    heigth: 96px;
+  }
+}
