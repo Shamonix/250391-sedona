@@ -1,0 +1,133 @@
+.intro {
+  @media (min-width: @mobile-width) {
+    &::before {
+      content: '';
+      display: block;
+      height: 158px;
+      background: url('../img/bg-intro-triangle-mobile.svg') no-repeat bottom,
+      url('../img/text-sedona.svg') no-repeat center 43%,
+      @lightblue url('../img/bg-back-mobile@1x.jpg') no-repeat center bottom;
+      background-size: 103%, 230px, auto;  
+    }
+    &--index-page::before {
+      height: 389px;
+      background: url('../img/bg-intro-triangle-mobile.svg') no-repeat center 100%,
+      url('../img/text-sedona-index.svg') no-repeat center 51%,
+      @lightblue url('../img/bg-back-mobile@1x.jpg') no-repeat top;
+      background-size: 103%, 280px, auto;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: '';
+      display: block;
+      height: 290px;
+    }
+    &--index-page::before {
+      height: 520px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      height: 300px; 
+    }
+    &--index-page::before {
+      height: 518px; 
+    }
+  }
+}
+
+.intro__content {
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: @mobile-width) {
+    &--index-page {
+      padding: 40px 20px 26px;
+    }
+    &--photo-page {
+      width: 271px;
+      padding: 38px 20px 27px;
+    }
+    &--form-page {
+      width: auto;
+      padding: 38px 20px 17px;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    width: 455px;
+    &--index-page {
+      width: 510px;
+      padding: 48px 20px 30px;
+    }
+    &--photo-page {
+      padding: 73px 20px 31px;
+    }
+    &--form-page {
+      padding: 73px 20px 35px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &--index-page {
+      padding: 50px 20px 13px;
+    }
+    &--photo-page {
+      padding: 112px 20px 32px;
+    }
+    &--form-page {
+      padding: 112px 20px 20px;
+    }
+  }
+}
+
+.intro__title {
+  max-width: 265px;
+  margin: 0 auto 26px;
+  .font-title();
+  line-height: 26px;
+  color: @black;
+  &--index-page {
+    margin: 0 auto 29px;
+  }
+  @media (min-width: @tablet-width) {
+    max-width: none;
+    margin: 0 auto 30px;
+    font-size: 30px;
+    line-height: 36px;
+    &--index-page {
+      font-size: 21px;
+      line-height: 26px;
+    }
+  }
+}
+
+.intro__text {
+  display: block;
+  margin: 0 auto;
+  .font-main();
+  line-height: 24px;
+  color: @black;
+  @media (min-width: @mobile-width) {
+    &--form-page {
+      max-width: 330px;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    max-width: 445px;
+    line-height: 26px;
+    &--index-page {
+      max-width: none;
+      margin-bottom: 19px;
+    }
+    &--photo-page {
+      margin-bottom: 36px;
+    }
+    &--form-page {
+      margin-bottom: 37px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+  }
+}
