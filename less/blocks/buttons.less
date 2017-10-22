@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 15px;
+  .font-title-big();
+  line-height: 26px;
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: @lightblue;
+
+  &:hover,
+  &:focus {
+    background-color: @blue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @darkblue;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
+}

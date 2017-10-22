@@ -1,3 +1,24 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+  width: 768px;
+  margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .page-main__title {
   .font-title();
   color: @black;
