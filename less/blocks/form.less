@@ -36,13 +36,13 @@ textarea:-moz-placeholder {
   .font-title();
   padding-top: 20px;
   text-align: center;
-  font-size: 18px;
   line-height: 26px;
 }
 
 .form__label {
-  font-size: 14px;
+  .font-main();
   line-height: 26px;
+  color: @darkergrey;
 }
 
 .form__label--text {
@@ -272,9 +272,10 @@ textarea:-moz-placeholder {
 
 @media (min-width: @tablet-width) {
   .form {
-    @include tablet-content;
     display: flex;
     flex-wrap: wrap;
+    width: 648px;
+    padding: 0 60px;
   }
 
   .form__fieldset {
@@ -434,6 +435,7 @@ textarea:-moz-placeholder {
 
   .form__required {
     display: inline;
+    .font-main();
   }
 }
 
@@ -524,6 +526,7 @@ textarea:-moz-placeholder {
   .form__submit {
     width: 480px;
   }
+
   .desktop-hidden {
     display: none;
   }

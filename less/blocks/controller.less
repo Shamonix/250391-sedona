@@ -1,5 +1,6 @@
 .controller {
   background-color: rgba(0, 0, 0, 0.6);
+
   @media (min-width: @tablet-width) {
     box-shadow: 0 0 0 45px rgba(0, 0, 0, 0.6);
   }
@@ -10,6 +11,7 @@
   height: 3px;
   margin: 21px;
   background-color: rgba(255, 255, 255, 0.2);
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-left: 95px;
@@ -17,6 +19,7 @@
     margin-bottom: 0;
     box-shadow: none;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 173px;
   }
@@ -32,9 +35,12 @@
   height: 10px;
   background-color: @white;
   border-radius: 50%;
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     left: 28%;
   }
+
   @media (min-width: @desktop-width) {
     left: 20%;
   }
@@ -51,6 +57,7 @@
   padding-right: 13px;
   padding-left: 13px;
   background-color: @lightgrey;
+
   @media (min-width: @tablet-width) {
     top: -48px;
     left: 0;
@@ -67,9 +74,11 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100px;
+
   @media (min-width: @tablet-width) {
     width: 124px;
   }
+
   @media (min-width: @desktop-width) {
     width: 128px;
   }
@@ -81,6 +90,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -89,9 +100,11 @@
     width: 62px; 
     height: 93px;
   }
+
   @media (min-width: @desktop-width) {
     width: 64px;
   }
+
   &--replay {
     @media (min-width: @tablet-width) {
       justify-content: flex-end;
@@ -103,6 +116,7 @@
 
 .controller__button svg {
   fill: #5c6870;
+  
   @media (min-width: @tablet-width) {
     fill: @white;
   }
